@@ -12,29 +12,55 @@ lines. Kotlin does to. Let's start there.
 The REPL
 ========
 
-Opening the Kotlin REPL is easy:
+Opening the Kotlin REPL is easy. You can use the ``Tools | Kotlin`` menu
+or search for the action:
 
-[screenshot showing opening the REPL]
+.. image:: REPL_open.png
 
 In Python we have the ``Python Console`` tool window, which opens the
-Python interpreter, in the context of your project, with some IDE goodness
-thrown in. The Kotlin REPL is the same idea.
+Python interpreter in the context of your project. The Kotlin REPL is
+the same idea.
 
 Let's type in some code:
 
-[screenshot of entering ``println("Hello World")``]
+.. image:: REPL.png
 
-We can type in a line of code and evaluate it, letting Kotlin/Java do a
-mountain of machinery behind the scenes. It's statetful as well:
+Here we typed a line of Kotlin code, then executed it with ``Cmd-Enter``.
+Kotlin then evaluated it, letting Kotlin/Java do a mountain of machinery
+behind the scenes.
 
-[screenshot of entering ``val x = "Hello World"`` then ``println(msg)``]
+The REPL is can handle multiple lines:
 
-This is our first foray into Kotlin. Let's analyze it from
+.. image:: REPL_state.png
 
-Let's click the red X to close the REPL and start writing some Kotlin code.
+As this is our first foray into Kotlin, let's analyze this small bit of
+code from the Python perspective:
 
-[video for this segment]
+.. code-block:: kotlin
 
+    val msg = "Hello Kotlin"
+    print(msg)
+
+- We declare variables with ``var`` (which allows re-assignment) or
+  ``val`` (which is like a constant). Python doesn't have this. JavaScript
+  ES6 and TypeScript do.
+
+- Double quotes for strings, and yes, Kotlin has triple-quoted multiline
+  strings
+
+- No semicolons!
+
+- A print function
+
+All in all...looks a lot like Python.
+
+Click the red X to close the REPL and let's start writing some Kotlin code.
+
+.. raw:: html
+
+  <iframe src="https://drive.google.com/file/d/0ByDKocMZdLZLeEZjVDd6MUVDckk/preview"
+          width="640" height="480"
+          style="margin-bottom: 2em"></iframe>
 
 
 First File
@@ -51,30 +77,65 @@ We can start the same in Kotlin. Let's show this. IntelliJ has created a
 .. literalinclude:: hello_world.kt
     :language: kotlin
 
-Q: Are there times when src/main/kotlin is important, e.g. Gradle?
+Here's the minimum Python file to mimic this functionality:
 
-- Do the sequence to show printing a line
+.. literalinclude:: hello_world_basic.py
 
-- Explain the concepts involved
+The Kotlin file shows the standard Kotlin "entry point": by convention,
+the file being executed must have a function named ``main`` which accepts
+a single argument, an array of strings. This is a *bit* similar to the
+common (but not required) Python run block. For example, this file in
+Python might look like this:
 
+.. literalinclude:: hello_world_main.py
 
+Looking at the Kotlin code itself:
 
-0) The REPL (perhaps start with it?)
+- Kotlin uses the ``fun`` keyword to define a function, whereas Python
+  uses ``def``
 
-1) def vs. fun
+- This special ``main`` function has a contract...it's going to be
+  passed an argument
 
-2) Importance of “def main” vs. __name__
+- We see the first hint of typing. It's mandatory in Kotlin...sort of.
+  In this case we have an array of strings. With Python 3.6 variable
+  annotations for optional type hinting, this would be:
 
-3) K: required args to main()
+  .. literalinclude:: hello_world_typing.py
 
-4) K has mandatory typing on function args, P implicit & static
-    - But both have a type system
+- Whereas Python terminates the function line with a colon and uses
+  indentation for the block, Kotlin uses the standard curly braces
+  syntax
 
-5) K has optional return type when Unit (void)
+Python's weird ``if __name__`` block is ugly, and reveals a certain
+something about packaging being added after-the-fact, but shows
+that Python is ready to just let you do damn fool stupid stuff at
+module scope. Like run your program. Kotlin has a bit of a formal
+contract to meet when executing an "entry point".
 
-6) print method is the same in both
+.. note::
 
-7) Running: clicking arrow beside the function (but slower first time for Kotlin)
+    Don't like typing the boilerplate? PyCharm has a Live
+    Template ``main`` for generating the run block at the
+    bottom. So does Kotlin. We'll show this in the video
+    for this segment.
+
+We saw strong typing at play in Kotlin. Python of course has
+typing, but it is at run time, and is inferred. As we'll see later,
+Kotlin lets you skip the syntax by inferring type information,
+but it is still at compile time.
+
+Kotlin has another syntactic convenience: you aren't required to
+say that the function returns nothing.
+
+Time to run this, which really means, compile and execute. If you're
+familiar with PyCharm run configurations and gutter icons, it's
+the same:
+
+[screenshot of running it]
+
+Next
+====
 
 8) Kotlin does some magic behind-the-scenes creation of Java classes named from the file name, because Java needs classes
 
