@@ -6,9 +6,6 @@ Java is installed, our IDE has a project open, we're ready to write some
 code. In this step we breeze through a light treatment of many Kotlin
 concepts, all from the Python perspective.
 
-Python has a nice handy console/REPL that we can use to just evaluate some
-lines. Kotlin does to. Let's start there.
-
 The REPL
 ========
 
