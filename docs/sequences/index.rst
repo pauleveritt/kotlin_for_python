@@ -10,9 +10,7 @@ Sequences and Looping
 
 4) if “expressions” (Python doesn’t have this) var maxValue:Int = if (a > b) a else b but multiple lines (only the last value is used in the block)
 
-5) when (aka switch)…Python doesn’t have this
-
-  .. code-block:: kotlin
+5) when (aka switch)…Python doesn’t have this::
 
     when (x) {
         !in 1..20 -> println(“x is 1”)

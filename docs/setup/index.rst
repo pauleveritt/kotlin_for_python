@@ -71,7 +71,7 @@ them.
 Python perspective*
 
 Virtual environments and
-:ref:`package management <packages/index>`_
+:doc:`package management <../packages/index>`
 are places where Python is behind. At the same time, the complexity is
 limited. Java (and for that matter, NodeJS) have stronger stories, but you
 can't take a step in without feeling pretty dumb about the huge concepts

@@ -3,7 +3,6 @@ Kotlin for Python Developers
 
 .. toctree::
     :maxdepth: 2
-    :caption: Contents:
 
     about
     setup/index
