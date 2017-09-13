@@ -1,2 +1,3 @@
 sphinx
 livereload
+sphinx_rtd_theme
