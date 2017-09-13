@@ -33,6 +33,10 @@ This is our first foray into Kotlin. Let's analyze it from
 
 Let's click the red X to close the REPL and start writing some Kotlin code.
 
+[video for this segment]
+
+
+
 First File
 ==========
 
@@ -45,6 +49,7 @@ We can start the same in Kotlin. Let's show this. IntelliJ has created a
 ``hello_world.kt``:
 
 .. literalinclude:: hello_world.kt
+    :language: kotlin
 
 Q: Are there times when src/main/kotlin is important, e.g. Gradle?
 

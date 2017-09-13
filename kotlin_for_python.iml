@@ -2,7 +2,7 @@
 <module type="JAVA_MODULE" version="4">
   <component name="FacetManager">
     <facet type="Python" name="Python">
-      <configuration sdkName="Python 3.6.1 virtualenv at ~/IdeaProjects/companion/.venv" />
+      <configuration sdkName="Python 3.6.2 virtualenv at ~/projects/pauleveritt/kotlin_for_python/.venv" />
     </facet>
   </component>
   <component name="NewModuleRootManager" inherit-compiler-output="true">
@@ -13,11 +13,14 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="KotlinJavaRuntime" level="project" />
-    <orderEntry type="library" name="Python 3.6.1 virtualenv at ~/IdeaProjects/companion/.venv interpreter library" level="application" />
+    <orderEntry type="library" name="Python 3.6.2 virtualenv at ~/projects/pauleveritt/kotlin_for_python/.venv interpreter library" level="application" />
   </component>
   <component name="ReSTService">
     <option name="workdir" value="$MODULE_DIR$/docs" />
     <option name="DOC_DIR" value="$MODULE_DIR$/docs" />
+  </component>
+  <component name="TemplatesService">
+    <option name="TEMPLATE_CONFIGURATION" value="Jinja2" />
   </component>
   <component name="TestRunnerService">
     <option name="PROJECT_TEST_RUNNER" value="Unittests" />
