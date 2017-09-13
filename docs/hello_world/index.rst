@@ -12,6 +12,10 @@ lines. Kotlin does to. Let's start there.
 The REPL
 ========
 
+Python has an interactive interpreter, aka REPL, which makes it easy to
+play around and learn. It's a dynamic language, so this makes sense. As
+it turns out, Kotlin (in IntelliJ) has a REPL also.
+
 Opening the Kotlin REPL is easy. You can use the ``Tools | Kotlin`` menu
 or search for the action:
 
