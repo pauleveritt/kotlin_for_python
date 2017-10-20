@@ -21,6 +21,32 @@ developer who knows nothing about Kotlin, Java, Gradle, or the JVM.
     classes/index
     packages/index
 
+To Do
+=====
+
+
+8) Kotlin does some magic behind-the-scenes creation of Java classes
+   named from the file name, because Java needs classes
+
+9) Comparison of “compilation” pipelines
+
+10) Comment syntax
+
+11) Variable definitions: var vs. val (immutable)
+
+11a) …and compiler enforcement
+
+12) Implications of typing when assigning/re-assigning
+
+12a) …and compiler enforcement, vs. Python
+
+13) Explicitly defining a type during declaration: the same
+
+14) Re-assignin immutable via val causes compiler error
+
+15) Calling functions and type checking
+
+
 Indices and tables
 ==================
 
