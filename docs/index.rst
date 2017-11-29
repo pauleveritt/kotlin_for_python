@@ -15,7 +15,9 @@ developer who knows nothing about Kotlin, Java, Gradle, or the JVM.
     about
     setup/index
     hello_world/index
+    variables/index
     types/index
+    conditionals/index
     sequences/index
     functions/index
     classes/index
@@ -23,7 +25,6 @@ developer who knows nothing about Kotlin, Java, Gradle, or the JVM.
 
 To Do
 =====
-
 
 8) Kotlin does some magic behind-the-scenes creation of Java classes
    named from the file name, because Java needs classes

@@ -1,0 +1,13 @@
+=========
+Variables
+=========
+
+JavaScript ES6 and TypeScript do (``let`` and ``const``.)
+
+
+As we'll see
+later, Kotlin lets you skip the syntax by inferring type information,
+but it is still at compile time.
+
+Kotlin will let you know to use a val when you use a var unnecessarily
+
