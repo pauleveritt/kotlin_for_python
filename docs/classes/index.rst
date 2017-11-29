@@ -32,3 +32,7 @@ name -- is terse and doesn't require assigning each value to "self".
 
     Python's ``__init__`` is called a constructor, but as its name implies,
     it is actually an initializer. The ``__new__`` method is the factory.
+
+8) Kotlin does some magic behind-the-scenes creation of Java classes
+   named from the file name, because Java needs classes
+

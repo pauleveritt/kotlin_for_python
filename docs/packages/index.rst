@@ -1,6 +1,6 @@
-========
-Packages
-========
+====================
+Packages and Imports
+====================
 
 Java Packages, imports, namespaces
 

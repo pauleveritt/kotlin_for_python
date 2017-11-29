@@ -49,3 +49,5 @@ If using Python 3.5+ type hinting, that would be:
 
 Not too shabby. This will be a recurring point: we'll compare Kotlin not
 just with "normal" Python, but also against type-hinted-Python.
+
+- Function argument typing and return value typing
