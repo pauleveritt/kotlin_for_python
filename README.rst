@@ -3,6 +3,11 @@ Kotlin for Python
 
 Documentation and tutorials for explaining Kotlin to Python developers.
 
+.. note::
+
+    This is not an official JetBrains project, just an experiment I was 
+    doing as a personal side project.
+
 - IntelliJ project
 
 - Docs in Sphinx
