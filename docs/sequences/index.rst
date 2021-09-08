@@ -37,7 +37,7 @@ Sequences and Looping
 
 6) generators, iterators
 
-    In python, a simple generator is written like this:
+In python, a simple generator is written like this:
 
 .. code-block:: python
 
