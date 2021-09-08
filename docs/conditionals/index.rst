@@ -30,3 +30,8 @@ I won't explain everything in detail since conditionals are the same in any lang
 
 Just keep in mind that in kotlin, you must explicitly use a boolean, be it from a comparison or a variable.
 You can't pass it a number or empty string and expect it to detect if its ``true`` or ``false``
+
+
+Oh yeah, to combine conditionals in kotlin we use ``&&`` for ``and`` and ``||`` for ``or``.
+
+Negating a conditional is done with an exclamation mark, like this ``!true`` results in ``false``.
