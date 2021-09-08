@@ -2,20 +2,33 @@
 Variables and Types
 ===================
 
-JavaScript ES6 and TypeScript do (``let`` and ``const``.)
+A read-only variable is written like so:
+
+.. code-block:: kotlin
+
+  val cat: String = "meow"
+
+Kotlin is smart enough to infer the type of the variable in this case, so we can directly write:
+
+.. code-block:: kotlin
+
+  val cat = "meow"
+
+Attempting to re-assign to a val will result in a compile error.
+
+A normal variable is written like so:
+
+.. code-block:: kotlin
+  
+  var cat = "meow"
+
+Not re-assigning to a variable will make the compiler
+scream at us for using a var when val could be used instead.
 
 
-As we'll see
-later, Kotlin lets you skip the syntax by inferring type information,
-but it is still at compile time.
-
-Kotlin will let you know to use a val when you use a var unnecessarily
-
-- Inferred types versus explicit
-
-- The compiler will fail on re-assignment of val
-
-- Scope: top-level versus local
+===================
+TODO
+===================
 
 Class variables: properties and fields covered in classes
 
