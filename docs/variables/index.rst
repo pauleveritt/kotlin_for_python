@@ -80,7 +80,7 @@ Instead the syntax is:
 
   mapOf("key" to "value") // { "key": "value" }
 
-But, you can still assign a value to a key using square brackets, like so:
+But, you can still assign a value to a key, like this:
 
 .. code-block:: kotlin
 
