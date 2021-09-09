@@ -134,3 +134,5 @@ We can then initialise it like this:
 
     Python's ``__init__`` is called a constructor, but as its name implies, it is actually an initializer.
     The ``__new__`` method is the factory.
+
+More info at https://kotlinlang.org/docs/classes.html
