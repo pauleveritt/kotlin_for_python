@@ -27,7 +27,7 @@ scream at us for using a var when val could be used instead.
 
 
 
-Kotlin has a lot of types, but I won't bother to explain them all since they are all the same concept.
+Kotlin has a lot of types, but I won't bother to explain them all since they have the same concept.
 
 A number can be in the type of a ``Byte``, a ``Short``, an ``Int``, a ``Float``, a ``Double`` or a ``Long``.
 
