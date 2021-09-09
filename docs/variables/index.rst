@@ -2,7 +2,7 @@
 Variables and Types
 ===================
 
-A read-only variable is written like so:
+An immutable variable is written like so:
 
 .. code-block:: kotlin
 
@@ -16,7 +16,7 @@ Kotlin is smart enough to infer the type of the variable in this case, so we can
 
 Attempting to re-assign to a val will result in a compile error.
 
-A normal variable is written like so:
+A mutable variable is written like so:
 
 .. code-block:: kotlin
   
@@ -26,12 +26,51 @@ Not re-assigning to a variable will make the compiler
 scream at us for using a var when val could be used instead.
 
 
-===================
-TODO
-===================
 
-Class variables: properties and fields covered in classes
+Kotlin has a lot of types, but I won't bother to explain them all since they are all the same concept.
 
-- Types on variables
+A number can be in the type of a ``Byte``, a ``Short``, an ``Int``, a ``Float``, a ``Double`` or a ``Long``.
 
-- Basic types https://kotlinlang.org/docs/reference/basic-types.html#basic-types
+Of course there are more numeric types, but those are not "basic", in other words they are not types you will use often.
+
+As for text, we have ``ByteArray``, ``CharArray``, ``String`` and ``Char``.
+
+.. note::
+
+  A ``ByteArray`` can be decoded using a charset to a string,
+  but a ``ByteArray`` can contain things other than text.
+
+Concerning sequences we have ``List``, ``ArrayList`` and ``MutableList``.
+
+A ``List`` is immutable, whilst an ``ArrayList`` is mutable.
+And as the name suggests ``MutableList`` is mutable as well.
+
+The closest to python's list is ``ArrayList``.
+And you can think of ``List`` as the closest to python's tuples.
+
+Unlike almost any other language, lists in kotlin are not written using square brackets.
+
+Instead you must initialise a list and optionally pass the items as parameters.
+Or you can make a muttable list and push items in it.
+
+Like any proper programming language kotlin has ``Boolean`` and they are written in lower case ``true``, ``false``.
+
+Kotlin does have dictionaries, but they are called ``Map`` here.
+A ``Map`` is immutable, so if you want to write to it you need to use a ``MutableMap``.
+
+Sadly kotlin doesn't support writing a map in the traditional way, in other words using braces and colons.
+
+Instead the syntax is:
+
+.. code-block:: kotlin
+
+  mapOf("key" to "value") // { "key": "value" }
+
+But, you can still assign a value to a key using square brackets, like so:
+
+.. code-block:: kotlin
+
+  val myMap = mutableMapOf<String, String>()
+  myMap["key"] = "value"
+
+For more info on the basic types go to https://kotlinlang.org/docs/reference/basic-types.html#basic-types
