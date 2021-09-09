@@ -53,6 +53,20 @@ Unlike almost any other language, lists in kotlin are not written using square b
 Instead you must initialise a list and optionally pass the items as parameters.
 Or you can make a muttable list and push items in it.
 
+example:
+
+.. code-block:: kotlin
+
+  listOf(1, 2, 3) // [1, 2, 3]
+  
+  val myList = mutableListOf()
+  
+  myList.add(1)
+  myList.add(2)
+  myList.add(3)
+  
+  println(myList) // [1, 2, 3]
+
 Like any proper programming language kotlin has ``Boolean`` and they are written in lower case ``true``, ``false``.
 
 Kotlin does have dictionaries, but they are called ``Map`` here.
