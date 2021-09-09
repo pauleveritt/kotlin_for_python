@@ -86,5 +86,7 @@ But, you can still assign a value to a key using square brackets, like so:
 
   val myMap = mutableMapOf<String, String>()
   myMap["key"] = "value"
+  // or
+  myMap.put("key", "value")
 
 For more info on the basic types go to https://kotlinlang.org/docs/reference/basic-types.html#basic-types
