@@ -46,8 +46,6 @@ Whilst ``Example.greeting`` is public, so its accessible outside of the class.
 
 To access that method, we have to initialise the class:
 
-that can be done like so:
-
 .. code-block:: kotlin
 
     val a = Example()
