@@ -63,7 +63,7 @@ Python's generators are treated as an instance, whilst the kotlin ones are w/o a
 What does that mean?
 Iterating in a kotlin generator, then stopping the iteration and starting a new one doesn't continue where it left off.
 
-To accomplice the behaviour we want (keeping a state) we have to save the iterator of that generator, and not the generator itself.
+To accomplish the behaviour we want, in other words keeping a state, we have to save the iterator of that generator, and not the generator itself.
 
 Example below:
 
@@ -91,6 +91,7 @@ But that is easily fixed by making a function that hosts that generator and retu
             }
         }.iterator()
     }
+
 voila!
 
 The above function behaves exactly like a python generator!

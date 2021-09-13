@@ -51,7 +51,7 @@ And you can think of ``List`` as the closest to python's tuples.
 Unlike almost any other language, lists in kotlin are not written using square brackets.
 
 Instead you must initialise a list and optionally pass the items as parameters.
-Or you can make a muttable list and push items in it.
+Or you can make a mutable list and push items in it.
 
 example:
 

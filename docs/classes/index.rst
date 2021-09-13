@@ -2,7 +2,7 @@
 Classes
 =======
 
-Classes in kotlin are pretty straighforward, I would say more than python's as well!
+Classes in Kotlin are pretty straighforward, I would say more than Python's as well!
 
 1) Defining a class with a method but no constructor
 
@@ -32,17 +32,19 @@ If we want to make a function be only accessible within the class we have to dec
 .. code-block:: kotlin
 
     class Example {
+        val greeting = "Hi there!"
+
         private fun sayHi() {
-            println("Hi there!")
+            println(greeting)
         }
     }
 
 Now ``Example.sayHi`` is private, that means that that function is not accessible outside of the Example class.
+Whilst ``Example.greeting`` is public, so its accessible outside of the class.
 
+1) Creating instance of a class
 
-2) Creating instance of a class
-
-to access that method we must initialise that class
+To access that method, we have to initialise the class:
 
 that can be done like so:
 
@@ -59,24 +61,22 @@ In kotlin (from my understanding) there are two ways to access the class propert
 
 First one is to..well..just use the property names normally...that was too simple wasn't it?
 
-Second one is to declare a companion object (its properties are private only) and either use the property names as usual, or use the class name in the same way we use “self” in python.
-
-eg
+Second one is to declare a companion object (its properties are private only) and either use the property names as usual, or use the class name in the same way we use “self” in python:
 
 .. code-block:: kotlin
 
     class Example {
         companion object {
-            val text = "Hi there!"
+            val greeting = "Hi there!"
         }
-        
+
         fun sayHi() {
-            println(text) // or Example.text
+            println(greeting) // or Example.greeting
         }
     }
 
 
-4) Constructors && binding constructor arguments to instance attributes (assignment, usage)
+1) Constructors && binding constructor arguments to instance attributes (assignment, usage)
 
 A class with a constructor in python looks like:
 
@@ -87,7 +87,7 @@ A class with a constructor in python looks like:
             self.paramOne = paramOne
             self.paramTwo = paramTwo
 
-In the above case it sets as properties the two parameters its given.
+In the above case it sets as properties the two parameters it's given.
 
 That can be done in kotlin like this:
 
@@ -133,6 +133,8 @@ We can then initialise it like this:
 .. note::
 
     Python's ``__init__`` is called a constructor, but as its name implies, it is actually an initializer.
-    The ``__new__`` method is the factory.
+    The ``__new__`` method is the factory, it is responsible for creating and returning a new instance for a class.
+
+    Learn more about python's ``__new__`` `here <https://docs.python.org/3/reference/datamodel.html#object.__new__>`_.
 
 More info at https://kotlinlang.org/docs/classes.html
