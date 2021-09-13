@@ -42,7 +42,7 @@ If we want to make a function be only accessible within the class we have to dec
 Now ``Example.sayHi`` is private, that means that that function is not accessible outside of the Example class.
 Whilst ``Example.greeting`` is public, so its accessible outside of the class.
 
-1) Creating instance of a class
+2) Creating instance of a class
 
 To access that method, we have to initialise the class:
 
@@ -76,7 +76,7 @@ Second one is to declare a companion object (its properties are private only) an
     }
 
 
-1) Constructors && binding constructor arguments to instance attributes (assignment, usage)
+4) Constructors && binding constructor arguments to instance attributes (assignment, usage)
 
 A class with a constructor in python looks like:
 
