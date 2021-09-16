@@ -33,3 +33,9 @@ Contributing
 
 We want this guide to be community-oriented and collaborative. Did we
 do something stupid? File a ticket or even send us a pull request.
+
+Contributors
+============
+
+- `Paul Everitt <https://github.com/pauleveritt>`_
+- `Arjix <https://github.com/ArjixWasTaken>`_
